@@ -16,3 +16,5 @@ jobs:
         echo Add other actions to build,
         lscpu
         free -h
+        uname -a
+        curl -L https://ifconfig.me
