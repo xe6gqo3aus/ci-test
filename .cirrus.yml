@@ -1,0 +1,12 @@
+container:
+  image: centos:7
+  cpu: 4
+  memory: 4G
+
+test:
+  run_script:
+    lscpu
+    free -h
+    id
+    curl -qL ifconfig.me
+    
